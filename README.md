@@ -1,70 +1,130 @@
-# Getting Started with Create React App
+Here is the `README.md` file in **Markdown format** for your **React Calculator App**:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+```markdown
+# 🧮 React Calculator App
 
-In the project directory, you can run:
+A simple calculator built using **React.js** that supports basic arithmetic operations.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📌 Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Add, subtract, multiply, divide numbers
+- Live input display
+- Clear (`C`) button to reset input
+- Uses **React Hooks** (`useState`) for state management
+- Split into reusable `Keypad` component
+- Simple and clean UI
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📁 Project Structure
 
-### `npm run build`
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+calculator-app/
+├── App.js            # Main calculator component
+├── keypad.js         # Keypad (buttons) component
+├── App.css           # Styling file (customize as needed)
+├── index.js          # Entry point
+├── package.json      # Dependencies and scripts
+└── README.md         # Project documentation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+````
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🚀 Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Follow these steps to run the calculator locally:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 1. Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Node.js and npm installed  
+  📥 [Download Node.js](https://nodejs.org/)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+### 2. Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npx create-react-app calculator-app
+cd calculator-app
+````
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+🔁 Replace the contents of:
 
-### Code Splitting
+* `App.js` with your provided code
+* `keypad.js` with the Keypad component
+* Optionally, style using `App.css`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+### 3. Run the App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm start
+```
 
-### Making a Progressive Web App
+Your app will be live at:
+📍 `http://localhost:3000`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## ⚠️ Warning
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+> ⚠️ This app uses `eval()` to evaluate expressions, which is generally **not safe** for production use.
+> For a secure and production-ready calculator, consider using a math expression parser like:
 
-### Deployment
+```bash
+npm install mathjs
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+And replace:
 
-### `npm run build` fails to minify
+```js
+let ans = eval(input)
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+with:
+
+```js
+import { evaluate } from 'mathjs';
+let ans = evaluate(input);
+```
+
+---
+
+## 🎨 Example Screenshot
+
+*(Optional - add screenshot here)*
+
+---
+
+## 🛠️ Future Improvements
+
+* Add decimal support
+* Input validation
+* Keyboard support
+* Scientific calculator mode
+* Secure expression parsing
+
+---
+
+## 👨‍💻 Author
+
+**Mithilesh Konagalla**
+📅 July 2025
+
+---
+
+## 📄 License
+
+This project is open-source and free to use.
+
+```
+
+Let me know if you want the actual `.md` file or want it customized for GitHub preview (with screenshot, badges, or deployment link).
+```
