@@ -2,7 +2,6 @@ Here is the `README.md` file in **Markdown format** for your **React Calculator 
 
 ---
 
-```markdown
 # 🧮 React Calculator App
 
 A simple calculator built using **React.js** that supports basic arithmetic operations.
@@ -21,7 +20,6 @@ A simple calculator built using **React.js** that supports basic arithmetic oper
 ---
 
 ## 📁 Project Structure
-
 ```
 
 calculator-app/
@@ -99,7 +97,7 @@ let ans = evaluate(input);
 
 ## 🎨 Example Screenshot
 
-*(Optional - add screenshot here)*
+![Calculator UI](public/screenshot.png)
 
 ---
 
@@ -124,7 +122,3 @@ let ans = evaluate(input);
 
 This project is open-source and free to use.
 
-```
-
-Let me know if you want the actual `.md` file or want it customized for GitHub preview (with screenshot, badges, or deployment link).
-```
