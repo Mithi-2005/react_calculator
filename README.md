@@ -97,7 +97,7 @@ let ans = evaluate(input);
 
 ## 🎨 Example Screenshot
 
-![Calculator UI](public/screenshot.png)
+![Calculator UI](public/image.png)
 
 ---
 
