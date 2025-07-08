@@ -114,7 +114,7 @@ let ans = evaluate(input);
 ## 👨‍💻 Author
 
 **Mithilesh Konagalla**
-📅 July 2025
+*📅 July 2025*
 
 ---
 
